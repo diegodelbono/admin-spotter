@@ -1,0 +1,14 @@
+@each $name,
+$value in $content-sizes {
+    .#{$content-prefix}--#{$name} {
+        @include breakpoint(lg, min) {
+            width: $value;
+        }
+    }
+}
+
+.wrapper {
+    @include breakpoint(lg, min) {
+        margin: 0 5%;
+    }
+}

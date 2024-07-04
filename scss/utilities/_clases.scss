@@ -1,0 +1,39 @@
+$profile-radius: $border-radius-circle;
+$profile-size: 3rem;
+
+.profile {
+    @include display-flex($justify: flex-start);
+    gap: 1rem;
+
+    &__figure {
+        border-radius: $profile-radius;
+        height: $profile-size;
+        width: $profile-size;
+        overflow: hidden;
+    }
+
+    &__info {
+        position: absolute;
+        left: 6rem;
+    }
+}
+
+.count {
+    font-size: $font-size-xs;
+    vertical-align: super;
+}
+
+.section-title {
+    color: $primary-color;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.hidden {
+    display: none !important;
+}

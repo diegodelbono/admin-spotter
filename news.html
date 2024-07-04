@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Spotter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <nav class="nav nav--small js-nav">
+
+            <div class="nav__row">
+                <div class="logo js-logo logo--imago"></div>
+                <div class="nav__button js-open-nav">
+                    <div class="icon icon--lg">
+                        <img src="assets/icons/i-arrow-right.svg" alt="icon headphone" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav__container">
+                <a href="#" class="nav__item nav__item--active">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-building.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Edificios</div>
+                </a>
+                <a href="#" class="nav__item">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-cashier.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Cajeros</div>
+                </a>
+                <a href="#" class="nav__item">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-bell.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Novedades</div>
+                </a>
+            </div>
+            <div class="nav__row">
+                <div class="profile">
+                    <div class="profile__figure">
+                        <img src="images/profile.jpg" alt="Profile" />
+                    </div>
+                    <div class="profile__info">
+                        <div>Diego Delbono</div>
+                        <a href="">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page">
+
+            <div class="wrapper">
+
+                <div class="breadcrumb">
+                    <a href="#" class="link">Edificios</a>
+                </div>
+
+                <div class="header">
+                    <div class="header__container">
+                        <div class="header__item">
+                            <h1>Aguas Blancas</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content content--lg">
+
+                    <div class="tabs">
+                        <div class="tabs__container" role="tablist" aria-label="Tabs">
+                            <button class="tab__button" role="tab" aria-selected="true" aria-controls="panel-detalle"
+                                id="tab-detalle">Detalle <span class="count">10</span></button>
+                            <button class="tab__button" role="tab" aria-selected="false" aria-controls="panel-personas"
+                                id="tab-personas">Personas <span class="count">20</span></button>
+                            <button class="tab__button" role="tab" aria-selected="false" aria-controls="panel-servicios"
+                                id="tab-servicios">Servicios</button>
+                            <button class="tab__button" role="tab" aria-selected="false"
+                                aria-controls="panel-matriculas" id="tab-matriculas">Matrículas</button>
+                            <button class="tab__button  tab__button--active" role="tab" aria-selected="false"
+                                aria-controls="panel-novedades" id="tab-novedades">Novedades <span
+                                    class="count">4</span></button>
+                        </div>
+                    </div>
+
+                    <div id="panel-novedades" role="tabpanel" aria-labelledby="tab-novedades">
+
+                        <div class="filter">
+
+                            <div class="filter__item--button">
+                                <button type="button" class="btn btn-outline-primary" role="button">
+                                    Historico
+                                </button>
+                                <button type="button" class="btn btn-primary" role="button">
+                                    Agregar
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="card card--active js-card">
+                            <div class="card__wrapper">
+                                <div class="card__item card__item--date">24 de Junio 2024</div>
+                                <div class="card__item card__item--detail">Contrary to popular belief, Lorem Ipsum  ...
+                                </div>
+                                <div class="card__item card__item--author">Camila</div>
+                                <div class="card__item card__item">Servicio técnico</div>
+                                <div class="card__item--action">
+
+                                    <button class="btn-icon btn-icon-primary js-card-action">
+                                        <span class="icon icon--md">
+                                            <img src="assets/icons/i-down.svg" alt="Icon update" />
+                                        </span>
+                                    </button>
+
+                                    <button class="btn-icon btn-icon-primary js-open-dropdown">
+                                        <span class="icon icon--sm">
+                                            <img src="assets/icons/i-bulk.svg" alt="Icon bulk" />
+                                        </span>
+                                    </button>
+
+                                    <div class="dropdown js-dropdown">
+                                        <button type="button" class="btn btn-outline-primary" role="button">
+                                            <span class="icon icon--xs">
+                                                <img src="assets/icons/i-update.svg" alt="Icon update" />
+                                            </span>
+                                            Confirmar
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary" role="button">
+                                            <span class="icon icon--xs">
+                                                <img src="assets/icons/i-update.svg" alt="Icon update" />
+                                            </span>
+                                            Cancelar
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary" role="button">
+                                            <span class="icon icon--xs">
+                                                <img src="assets/icons/i-update.svg" alt="Icon update" />
+                                            </span>
+                                            Leido
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__description js-card-description">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s, when an unknown printer  Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s, when an unknown printer 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card js-card">
+                            <div class="card__wrapper">
+                                <div class="card__item card__item--date">24 de Junio 2024</div>
+                                <div class="card__item card__item--detail">Contrary to popular belief, Lorem Ipsum  ...
+                                </div>
+                                <div class="card__item card__item--author">Camila</div>
+                                <div class="card__item card__item">Servicio técnico</div>
+                                <div class="card__item--action">
+                                    <button class="btn-icon btn-icon-primary js-card-action">
+                                        <span class="icon icon--md">
+                                            <img src="assets/icons/i-down.svg" alt="Icon update" />
+                                        </span>
+                                    </button>
+
+                                    <button class="btn-icon btn-icon-primary js-open-dropdown">
+                                        <span class="icon icon--sm">
+                                            <img src="assets/icons/i-bulk.svg" alt="Icon bulk" />
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__description js-card-description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer  Lorem Ipsum is simply dummy text of
+                                the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer 
+                            </div>
+                        </div>
+
+                        <div class="card card--read js-card">
+                            <div class="card__wrapper">
+                                <div class="card__item card__item--date">24 de Junio 2024</div>
+                                <div class="card__item card__item--detail">Contrary to popular belief, Lorem Ipsum  ...
+                                </div>
+                                <div class="card__item card__item--author">Camila</div>
+                                <div class="card__item card__item">Servicio técnico</div>
+                                <div class="card__item--action">
+                                    <button class="btn-icon btn-icon-primary btn-disabled js-card-action">
+                                        <span class="icon icon--md">
+                                            <img src="assets/icons/i-down.svg" alt="Icon update" />
+                                        </span>
+                                    </button>
+
+                                    <button class="btn-icon btn-icon-primary btn-disabled js-open-dropdown">
+                                        <span class="icon icon--sm">
+                                            <img src="assets/icons/i-bulk.svg" alt="Icon bulk" />
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__description js-card-description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer  Lorem Ipsum is simply dummy text of
+                                the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer 
+                            </div>
+                        </div>
+
+                        <div class="card card--disabled js-card">
+                            <div class="card__wrapper">
+                                <div class="card__item card__item--date">24 de Junio 2024</div>
+                                <div class="card__item card__item--detail">Contrary to popular belief, Lorem Ipsum  ...
+                                </div>
+                                <div class="card__item card__item--author">Camila</div>
+                                <div class="card__item card__item">Servicio técnico</div>
+                                <div class="card__item--action">
+                                    <button class="btn-icon btn-icon-primary btn-disabled js-card-action">
+                                        <span class="icon icon--md">
+                                            <img src="assets/icons/i-down.svg" alt="Icon update" />
+                                        </span>
+                                    </button>
+
+                                    <button class="btn-icon btn-icon-primary btn-disabled js-open-dropdown">
+                                        <span class="icon icon--sm">
+                                            <img src="assets/icons/i-bulk.svg" alt="Icon bulk" />
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__description js-card-description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer  Lorem Ipsum is simply dummy text of
+                                the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer 
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+</body>
+
+</html>

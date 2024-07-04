@@ -1,0 +1,7 @@
+.#{$label-prefix},
+label {
+    color: $label-color;
+    display: inline-block;
+    font-size: $font-size-sm;
+    margin-bottom: $label-margin;
+}

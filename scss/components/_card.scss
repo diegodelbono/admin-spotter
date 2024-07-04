@@ -1,0 +1,75 @@
+.#{$card-prefix} {
+    border: $card-border;
+    border-radius: $card-radius;
+    margin-bottom: $card-margin;
+    position: relative;
+    @include transition($transition-base);
+
+    @include hover {
+        border-color: $card-hover-border;
+        box-shadow: $card-hover-shadown;
+    }
+
+    &--active {
+        border-color: $primary-color;
+        background-color: $third-color;
+        color: $primary-color;
+    }
+
+    &--read {
+        color: $grey-400;
+    }
+
+    &--disabled {
+        background-color: $grey-100;
+        color: $grey-400;
+    }
+
+    &__wrapper {
+        @include display-flex($align: center, $justify: flex-start);
+        gap: $gap-lg;
+        padding: $card-wrapper-padding;
+    }
+
+    &__item {
+        &--date {
+            width: 15%;
+        }
+
+        &--detail {
+            width: 40%;
+        }
+
+        &--author {
+            width: 15%;
+        }
+
+        &--action {
+            @include display-flex;
+            gap: $gap-md;
+            margin-left: auto;
+        }
+    }
+
+    &__description {
+        display: none;
+        margin-left: 18%;
+        margin-bottom: $margin-lg;
+        width: 40%;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.#{$card-prefix}-dashboard {
+    margin: 0;
+    height: 100%;
+    padding: $padding-lg;
+
+    @include hover {
+        border-color: $grey-200;
+        box-shadow: none;
+    }
+}

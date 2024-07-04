@@ -1,0 +1,35 @@
+.#{$modal-prefix} {
+    background-color: $modal-bg;
+    @include display-flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    &__wrapper {
+        background-color: $modal-wrapper-bg;
+        border-radius: $modal-wrapper-radius;
+        max-width: $modal-wrapper-width;
+        padding: $modal-wrapper-padding;
+        position: relative;
+        width: 100%;
+    }
+
+    &__content {
+        margin: $modal-content-margin;
+    }
+}
+
+@each $name,
+$value in $modal-sizes {
+    .#{$modal-prefix}--#{$name} {
+        .#{$modal-prefix}__wrapper {
+            @include breakpoint(lg, min) {
+                max-width: $value;
+            }
+
+            @include breakpoint(lg) {
+                max-width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+    <title>Spotter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <nav class="nav nav--small js-nav">
+
+            <div class="nav__row">
+                <div class="logo js-logo logo--imago"></div>
+                <div class="nav__button js-open-nav">
+                    <div class="icon icon--lg">
+                        <img src="assets/icons/i-arrow-right.svg" alt="icon headphone" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav__container">
+                <a href="#" class="nav__item nav__item--active">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-building.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Edificios</div>
+                </a>
+                <a href="#" class="nav__item">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-cashier.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Cajeros</div>
+                </a>
+                <a href="#" class="nav__item">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-bell.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Novedades</div>
+                </a>
+            </div>
+            <div class="nav__row">
+                <div class="profile">
+                    <div class="profile__figure">
+                        <img src="images/profile.jpg" alt="Profile" />
+                    </div>
+                    <div class="profile__info">
+                        <div>Diego Delbono</div>
+                        <a href="">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page">
+
+            <div class="wrapper">
+
+
+                <div class="breadcrumb">
+                    <a href="#" class="link">Inicio</a>
+                </div>
+
+                <div class="header">
+                    <div class="header__container">
+                        <div class="header__item">
+                            <h1>Comunicaciones <span class="count">10</span></h1>
+                        </div>
+                        <div class="header__item">
+                            <button type="button" class="btn btn-primary" role="button">
+                                <span class="icon icon--xs icon--plus"></span>
+                                Crear nuevo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content content--sm">
+
+                    <div class="alert alert--error" role="alert">
+                        <div class="alert__msg">{user} no puede llegar todavía</div>
+
+                        <div class="alert__button">
+                            <button role="button" class="js-alert-button close">
+                                <div class="icon icon--sm">
+                                    <img src="assets/icons/i-close.svg" alt="icon close" />
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="form-box">
+                            <label class="label" for="name">Nombre</label>
+                            <input id="name" type="text" class="input-text" />
+                        </div>
+
+                        <div class="form-box">
+                            <label class="label" for="name">Apellido</label>
+                            <input id="name" type="text" class="input-text" />
+                            <span class="form-help">Ayuda del campo</span>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="form-box">
+                            <label class="label" for="name">Tipo de país</label>
+                            <select id="name" class="input-select">
+                                <option>uno</option>
+                                <option>uno</option>
+                                <option>uno</option>
+                            </select>
+                            <span class="form-help">Ayuda del campo</span>
+                        </div>
+
+                        <div class="form-box">
+                            <label class="label" for="name">Tipo de documento</label>
+                            <select id="name" class="input-select">
+                                <option>uno</option>
+                                <option>uno</option>
+                                <option>uno</option>
+                            </select>
+                            <span class="form-help">Ayuda del campo</span>
+                        </div>
+
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" role="radio" name="example" value="example" id="example"
+                            class="input-radio" />
+                        <label for="example">Radiobutton</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" class="input-checkbox" role="checkbox" />
+                        <label>Checkbox</label>
+                    </div>
+
+                    <div class="form-box">
+                        <label class="label" for="name">Contenido</label>
+                        <textarea rows="5" id="contenido" class="input-text form-textarea"></textarea>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="form-box">
+                            <label class="label" for="name">Nombre</label>
+                            <input id="name" type="text" class="input-text form-disabled" />
+                        </div>
+
+                        <div class="form-box">
+                            <label class="label" for="name">Apellido</label>
+                            <input id="name" type="text" class="input-text form-error" />
+                            <span class="form-help alert-text--error">Ayuda del campo</span>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-primary">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+</body>
+
+</html>

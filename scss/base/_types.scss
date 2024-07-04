@@ -1,0 +1,28 @@
+@each $name, $size in $heading-font-size {
+
+    .#{$name},
+    #{$name} {
+        color: $heading-font-color-base;
+        font-size: $size;
+        font-weight: $heading-font-weight-base;
+        margin-bottom: 0.25rem;
+    }
+}
+
+@each $name, $size in $font-size {
+    .font--#{$name} {
+        font-size: $size;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .font--#{$color} {
+        color: $value;
+    }
+}
+
+@each $name, $size in $font-weight {
+    .font--#{$name} {
+        font-weight: $size;
+    }
+}

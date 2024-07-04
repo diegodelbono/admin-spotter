@@ -1,0 +1,417 @@
+// Colors
+$blue-light: #EDF2FF;
+$blue-regular: #3068F9;
+$blue-dark: #304968;
+$orange: #FEC370;
+
+$primary-color: $blue-regular;
+$secondary-color: $orange;
+$third-color: $blue-light;
+$extra-color: $blue-dark;
+
+$white: white;
+
+// Greys
+$grey-100: #F8F8F8;
+$grey-200: #DCDCDE;
+$grey-300: #919191;
+$grey-400: #868686;
+
+// Status
+$grey: #868686;
+$red: #FFD8D8;
+$green: #cdefdb;
+$yellow: #f3dc98;
+$blue: #b3e4ff;
+$disabled: $grey-300;
+
+$red: #FF4343;
+$green: #36C681;
+$blue: #2a5fcf;
+$yellow: #eb7221;
+
+$error-color: $red;
+$disabled-color: $disabled;
+$success-color: $green;
+$warning-color: $yellow;
+$info-color: $blue;
+
+$theme-colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "third": $third-color,
+    "extra": $extra-color,
+    "white": $white,
+    "grey": $disabled-color,
+    "error": $error-color,
+);
+
+$status-colors: (
+    "error": $error-color,
+    "warning": $warning-color,
+    "success": $success-color,
+    "info": $info-color,
+    "disabled": $disabled-color,
+);
+
+// --------------------------------------------------------
+//  Fonts
+// --------------------------------------------------------
+
+$font-color-base: $blue-dark;
+$font-family-rubik: "Rubik";
+$font-family-base: $font-family-rubik, sans-serif;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.85rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 2rem;
+
+$font-size: (
+    xs: $font-size-xs,
+    sm: $font-size-sm,
+    md: $font-size-md,
+    lg: $font-size-lg,
+    xl: $font-size-xl,
+);
+
+$font-size-base: $font-size-md;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+$font-weight: (
+    light: $font-weight-light,
+    normal: $font-weight-normal,
+    bold: $font-weight-bold,
+);
+
+$font-weight-base: $font-weight-normal;
+
+// --------------------------------------------------------
+//  Headings
+// --------------------------------------------------------
+
+$heading-font-size-h1: $font-size-base * 2;
+$heading-font-size-h2: $font-size-base * 1.3;
+$heading-font-size-h3: $font-size-base * 1.25;
+$heading-font-size-h4: $font-size-base * 1.2;
+$heading-font-size-h5: $font-size-base * 1.15;
+$heading-font-size-h6: $font-size-base;
+
+$heading-font-size: (
+    h1: $heading-font-size-h1,
+    h2: $heading-font-size-h2,
+    h3: $heading-font-size-h3,
+    h4: $heading-font-size-h4,
+    h5: $heading-font-size-h5,
+    h6: $heading-font-size-h6,
+);
+
+$heading-font-color-base: $font-color-base;
+$heading-font-weight-base: $font-weight-base;
+
+// --------------------------------------------------------
+//  Gap
+// --------------------------------------------------------
+$gap-xs: 0.5rem;
+$gap-sm: 1rem;
+$gap-md: 1.5rem;
+$gap-lg: 2rem;
+$gap-xl: 4rem;
+
+// --------------------------------------------------------
+//  Margin
+// --------------------------------------------------------
+$margin-xs: 0.5rem;
+$margin-sm: 1rem;
+$margin-md: 1.5rem;
+$margin-lg: 2rem;
+$margin-xl: 4rem;
+
+// --------------------------------------------------------
+//  Padding
+// --------------------------------------------------------
+$padding-ls: 0.25rem;
+$padding-xs: 0.75rem;
+$padding-sm: 1rem;
+$padding-md: 1.5rem;
+$padding-lg: 2rem;
+$padding-xl: 4rem;
+
+
+// --------------------------------------------------------
+//  Border radius
+// --------------------------------------------------------
+$border-radius-xs: 0.25rem;
+$border-radius-sm: 0.5rem;
+$border-radius-md: 1rem;
+$border-radius-lg: 2rem;
+$border-radius-xl: 4rem;
+$border-radius-circle: 100%;
+
+$border-radius-base: $border-radius-sm;
+
+// --------------------------------------------------------
+//  Breakpoints
+// --------------------------------------------------------
+$break-xs-min: 25rem; // 420px
+$break-sm-min: 38rem; // 600px
+$break-md-min: 48rem; // 768px
+$break-lg-min: 64rem;
+$break-xl-min: 75rem; // 1024px
+
+$breakpoints: (
+    xs: $break-xs-min,
+    sm: $break-sm-min,
+    md: $break-md-min,
+    lg: $break-lg-min,
+    xl: $break-xl-min,
+);
+
+// --------------------------------------------------------
+//  Border
+// --------------------------------------------------------
+$border-size: 1px;
+$border-type: solid;
+$border-color: transparent;
+
+$border-base: $border-size $border-type;
+
+// --------------------------------------------------------
+//  Transition
+// --------------------------------------------------------
+$shadow-base: 0 0 0 0.15rem $blue-light;
+$shadow-error-base: 0 0 0 0.15rem #ffe5e5;
+$shadow-disabled-base: 0 0 0 0.15rem rgb(245, 245, 245);
+
+// --------------------------------------------------------
+//  Transition
+// --------------------------------------------------------
+$transition-base: all 0.5s ease;
+
+// --------------------------------------------------------
+//  Alert
+// --------------------------------------------------------
+$alert-radius: $border-radius-base;
+$alert-font-size: $font-size-base;
+$alert-margin: $margin-md;
+$alert-padding: $padding-sm $padding-md;
+
+// --------------------------------------------------------
+//  Breadcrumb
+// --------------------------------------------------------
+$breadcrumb-margin: $margin-xs;
+
+// --------------------------------------------------------
+//  Button
+// --------------------------------------------------------
+$btn-color: $white;
+$btn-radius: $border-radius-base;
+$btn-padding: $padding-xs $padding-md;
+$btn-shadow: $shadow-base;
+
+// --------------------------------------------------------
+//  Card
+// --------------------------------------------------------
+$card-border: $border-base $grey-200;
+$card-margin: $margin-md;
+$card-radius: $border-radius-sm;
+
+$card-hover-border: $primary-color;
+$card-hover-shadown: $shadow-base;
+
+$card-expanded-border: $primary-color;
+
+$card-date-bg: $third-color;
+$card-date-padding: $padding-sm;
+$card-date-width: 6rem;
+
+$card-wrapper-padding: $padding-sm $padding-md;
+
+// --------------------------------------------------------
+//  Content
+// --------------------------------------------------------
+$content-xs-min: 25%;
+$content-sm-min: 50%;
+$content-md-min: 75%;
+
+$content-sizes: (
+    xs: $content-xs-min,
+    sm: $content-sm-min,
+    md: $content-md-min,
+);
+
+// --------------------------------------------------------
+//  Icons
+// --------------------------------------------------------
+$icon-size-xs: 0.75rem;
+$icon-size-sm: 1rem;
+$icon-size-md: 1.25rem;
+$icon-size-lg: 1.5rem;
+
+$icon-sizes: (
+    xs: $icon-size-xs,
+    sm: $icon-size-sm,
+    md: $icon-size-md,
+    lg: $icon-size-lg,
+);
+
+// --------------------------------------------------------
+//  Header
+// --------------------------------------------------------
+$header-margin: 0 0 $margin-md 0;
+
+// --------------------------------------------------------
+//  Input
+// --------------------------------------------------------
+$input-border: $border-base $grey-300;
+$input-color: $font-color-base;
+$input-font-size: $font-size-base;
+$input-radius: $border-radius-base;
+$input-padding: $padding-xs $padding-sm;
+
+$input-hover-border-color: $primary-color;
+
+$input-focus-border-color: $primary-color;
+$input-focus-shadow: $shadow-base; /// DIEGO
+
+$input-error-color: $error-color;
+$input-error-shadow: $shadow-error-base;
+
+$input-disabled-bg: $grey-100;
+$input-disabled-color: $disabled-color;
+$input-disabled-shadow: $shadow-disabled-base;
+
+// --------------------------------------------------------
+//  Checkbox
+// --------------------------------------------------------
+$checkbox-radius: $border-radius-xs;
+$checkbox-size: 1.25rem;
+$checkbox-checked-color: $primary-color;
+$checkbox-checked-icon: 'i-tick.svg';
+
+$help-color: $grey-300;
+$help-color-error: $error-color;
+$help-font-size: $font-size-sm;
+
+
+// --------------------------------------------------------
+//  Modal
+// --------------------------------------------------------
+$modal-xs-min: 25%;
+$modal-sm-min: 35%;
+$modal-md-min: 75%;
+
+$modal-sizes: (
+    xs: $modal-xs-min,
+    sm: $modal-sm-min,
+    md: $modal-md-min,
+);
+
+$modal-bg: rgba($extra-color, 0.5);
+$modal-wrapper-bg: $white;
+$modal-wrapper-radius: $border-radius-base;
+$modal-wrapper-padding: $padding-xl;
+$modal-wrapper-width: $modal-sm-min;
+$modal-content-margin: $margin-lg 0;
+
+// --------------------------------------------------------
+//  Label
+// --------------------------------------------------------
+$label-color: $grey-300;
+$label-margin: $margin-xs;
+
+
+// --------------------------------------------------------
+//  Login
+// --------------------------------------------------------
+$login-bg: $third-color;
+$login-padding: $padding-lg;
+$login-wrapper-bg: $white;
+$login-wrapper-radius: $border-radius-base;
+$login-form-width: 26rem;
+$login-header-margin: $margin-lg;
+$login-psw-align: center;
+$login-psw-margin: $margin-lg 0;
+$login-content-margin: $margin-lg 0;
+
+// --------------------------------------------------------
+//  Links
+// --------------------------------------------------------
+$link-color: $blue-regular;
+$link-decoration: none;
+$link-hover-color: $blue-dark;
+$link-hover-decoration: underline;
+
+// --------------------------------------------------------
+//  Nav
+// --------------------------------------------------------
+$nav-bg: $third-color;
+$nav-padding: $padding-xl 0;
+$nav-width: 20rem;
+
+$nav-item-border: 3px solid transparent;
+$nav-item-color: $font-color-base;
+$nav-item-gap: 1rem;
+$nav-item-padding: 1rem 1.75rem;
+
+
+// --------------------------------------------------------
+//  Pagination
+// --------------------------------------------------------
+$pagination-color: $font-color-base;
+$pagination-gap: $gap-sm;
+$pagination-margin: $margin-xl;
+$pagination-padding: $padding-xs;
+$pagination-radius: $border-radius-circle;
+
+$pagination-hover-color: $primary-color;
+$pagination-focus-color: $primary-color;
+$pagination-focus-shadow: $shadow-base;
+
+$pagination-active-color: $primary-color;
+$pagination-active-bg: $third-color;
+
+$pagination-disabled-color: $disabled-color;
+
+// --------------------------------------------------------
+//  Status
+// --------------------------------------------------------
+$status-align: center;
+$status-radius: $border-radius-sm;
+$status-font-size: $font-size-sm;
+$status-padding: $padding-ls $padding-sm;
+
+$status-width: fit-content;
+
+$table-border: $border-base $grey-200;
+$table-radius: $border-radius-base;
+
+// --------------------------------------------------------
+//  Table
+// --------------------------------------------------------
+$table-thead-bg: $grey-100;
+
+$table-cell-align: left;
+$table-cell-border: $border-base $grey-200;
+$table-cell-padding: $padding-sm;
+
+// --------------------------------------------------------
+//  Tabs
+// --------------------------------------------------------
+$tabs-border: $border-base $grey-200;
+$tabs-gap: $gap-lg;
+$tabs-margin: $margin-lg;
+
+
+$tab-border: $border-base transparent;
+$tab-color: $font-color-base;
+$tab-font-size: $font-size-md;
+$tab-padding: $padding-xs 0;
+
+$tab-hover-color: $primary-color;
+$tab-focus-shadown: $shadow-base;
+$tab-active-color: $primary-color;

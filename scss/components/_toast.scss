@@ -1,0 +1,36 @@
+.#{$toast-prefix} {
+    border-radius: $btn-radius;
+    display: flex;
+    padding: $btn-padding;
+
+    .icon {
+        @include display-flex;
+        border-radius: $border-radius-circle;
+        margin-left: $margin-md;
+
+        svg {
+            width: 70%;
+        }
+
+        svg path {
+            fill: $white;
+        }
+    }
+}
+
+@each $name, $color in $status-colors {
+    .#{$toast-prefix}--#{$name} {
+        border: $border-base $color;
+        color: $color;
+
+        .icon {
+            background-color: $color;
+        }
+    }
+}
+
+.#{$toast-prefix}-group {
+    display: flex;
+    gap: $gap-sm;
+    flex-wrap: wrap;
+}

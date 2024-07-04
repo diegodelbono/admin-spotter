@@ -1,0 +1,7 @@
+.#{$header-prefix} {
+    margin: $header-margin;
+
+    &__container {
+        @include display-flex($align: start, $justify: space-between);
+    }
+}

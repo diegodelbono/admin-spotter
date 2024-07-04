@@ -1,0 +1,27 @@
+.#{$dropdown-prefix} {
+    background-color: $white;
+    border-radius: $border-radius-base;
+    border: $border-base $grey-200;
+
+    //  border: 2px solid red;
+    display: none;
+    position: absolute;
+    // padding: $padding-lg;
+    // background-color: aqua;
+    // top: 5rem;
+    margin-top: 1rem;
+    width: fit-content;
+    right: 1rem;
+    z-index: 3;
+
+    .btn {
+        border: none;
+        border-radius: 0;
+
+        &:not(:last-child) {
+            border-bottom: $border-base $grey-200;
+        }
+
+
+    }
+}

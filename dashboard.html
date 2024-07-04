@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Spotter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <nav class="nav nav--small js-nav">
+
+            <div class="nav__row">
+                <div class="logo js-logo logo--imago"></div>
+                <div class="nav__button js-open-nav">
+                    <div class="icon icon--lg">
+                        <img src="assets/icons/i-arrow-right.svg" alt="icon headphone" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav__container">
+                <a href="#" class="nav__item nav__item--active">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-building.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Edificios</div>
+                </a>
+                <a href="#" class="nav__item">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-cashier.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Cajeros</div>
+                </a>
+                <a href="#" class="nav__item">
+                    <div class="nav__icon">
+                        <div class="icon icon--lg">
+                            <img src="assets/icons/i-bell.svg" alt="icon headphone" />
+                        </div>
+                    </div>
+                    <div class="nav__name">Novedades</div>
+                </a>
+            </div>
+            <div class="nav__row">
+                <div class="profile">
+                    <div class="profile__figure">
+                        <img src="images/profile.jpg" alt="Profile" />
+                    </div>
+                    <div class="profile__info">
+                        <div>Diego Delbono</div>
+                        <a href="">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page">
+
+            <div class="wrapper">
+
+                <div class="breadcrumb">
+                    <a href="#" class="link">Edificios</a>
+                </div>
+
+                <div class="header">
+                    <div class="header__container">
+                        <div class="header__item">
+                            <h1>Aguas Blancas</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content content--lg">
+
+                    <div class="tabs">
+                        <div class="tabs__container" role="tablist" aria-label="Tabs">
+                            <button class="tab__button" role="tab" aria-selected="true" aria-controls="panel-detalle"
+                                id="tab-detalle">Detalle <span class="count">10</span></button>
+                            <button class="tab__button" role="tab" aria-selected="false" aria-controls="panel-personas"
+                                id="tab-personas">Personas <span class="count">20</span></button>
+                            <button class="tab__button" role="tab" aria-selected="false" aria-controls="panel-servicios"
+                                id="tab-servicios">Servicios</button>
+                            <button class="tab__button" role="tab" aria-selected="false"
+                                aria-controls="panel-matriculas" id="tab-matriculas">Matrículas</button>
+                            <button class="tab__button  tab__button--active" role="tab" aria-selected="false"
+                                aria-controls="panel-novedades" id="tab-novedades">Novedades <span
+                                    class="count">4</span></button>
+                        </div>
+                    </div>
+
+                    <div id="panel-novedades" role="tabpanel" aria-labelledby="tab-novedades">
+
+                        <div class="filter">
+
+                            <button type="button" class="btn btn-error" role="button">
+                                <span class="icon icon--sm">
+                                    <img src="assets/icons/i-headphone.svg" alt="icon headphone" />
+                                </span>
+                                Llamar Voceo (1236)
+                            </button>
+
+                            <button type="button" class="btn btn-primary" role="button">
+                                <span class="icon icon--sm">
+                                    <img src="assets/icons/i-headphone.svg" alt="icon headphone" />
+                                </span>
+                                Portero exterior (1236)
+                            </button>
+
+                            <button type="button" class="btn btn-outline-primary" role="button">
+                                <span class="icon icon--sm">
+                                    <img src="assets/icons/i-reload.svg" alt="Icon update" />
+                                </span>
+                                Portero interior (0023)
+                            </button>
+
+                        </div>
+
+                        <div class="dashboard">
+
+                            <div class="dashboard__item">
+                                <p>Detalle de edificio</p>
+                                <div class="card card-dashboard">
+
+                                    <div class="box-info">
+                                        <span class="icon icon--md icon--primary">
+                                            <img src="assets/icons/i-headphone.svg" alt="icon headphone" />
+                                        </span>
+                                        <p>Fco. Vidal 633. Entre 21 de Setiembre y Vazquez Ledesma</p>
+                                    </div>
+
+                                    <div class="box-info">
+                                        <span class="icon icon--md icon--primary">
+                                            <img src="assets/icons/i-reload.svg" alt="icon headphone" />
+                                        </span>
+                                        <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                    </div>
+
+                                    <div class="box-info">
+                                        <span class="icon icon--md icon--primary">
+                                            <img src="assets/icons/i-headphone.svg" alt="icon headphone" />
+                                        </span>
+                                        <p>Fco. Vidal 633. Entre 21 de Setiembre y Vazquez Ledesma</p>
+                                    </div>
+
+                                    <div class="box-info">
+                                        <span class="icon icon--md icon--primary">
+                                            <img src="assets/icons/i-reload.svg" alt="icon headphone" />
+                                        </span>
+                                        <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dashboard__item">
+                                <p>Características</p>
+                                <div class="card card-dashboard">
+                                    <div class="toast-group">
+                                        <div class="toast toast--error">
+                                            Tags Spotter
+                                            <span class="icon icon--md">
+                                                <img src="assets/icons/i-close.svg" alt="Icon update" />
+                                            </span>
+                                        </div>
+                                        <div class="toast toast--error">
+                                            Portero antiguo
+                                            <span class="icon icon--md">
+                                                <img src="assets/icons/i-close.svg" alt="Icon update" />
+                                            </span>
+                                        </div>
+                                        <div class="toast toast--error">
+                                            Portero antiguo
+                                            <span class="icon icon--md">
+                                                <img src="assets/icons/i-close.svg" alt="Icon update" />
+                                            </span>
+                                        </div>
+                                        <div class="toast toast--success">
+                                            UPS
+                                            <span class="icon icon--md">
+                                                <img src="assets/icons/i-tick.svg" alt="Icon update" />
+                                            </span>
+                                        </div>
+                                        <div class="toast toast--success">
+                                            Totem
+                                            <span class="icon icon--md">
+                                                <img src="assets/icons/i-tick.svg" alt="Icon update" />
+                                            </span>
+                                        </div>
+                                        <div class="toast toast--success">
+                                            Tablet / Telefonos SIP
+                                            <span class="icon icon--md">
+                                                <img src="assets/icons/i-tick.svg" alt="Icon update" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+</body>
+
+</html>

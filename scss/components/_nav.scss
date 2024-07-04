@@ -1,0 +1,88 @@
+.#{$nav-prefix} {
+    background-color: $nav-bg;
+    @include display-flex($align: normal, $justify: space-between, $direction: column);
+    padding: $nav-padding;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    @include transition($transition-base);
+    width: $nav-width;
+
+    &__item {
+        border-left: $nav-item-border;
+        color: $nav-item-color;
+        @include display-flex ($justify: flex-start);
+        gap: $nav-item-gap;
+        padding: $nav-item-padding;
+
+        svg * {
+            fill: $nav-item-color;
+        }
+
+        &:hover {
+            background-color: darken($nav-bg, 5%);
+            text-decoration: none;
+        }
+
+        &--active {
+            background-color: lighten($nav-bg, 5%);
+            border-color: $secondary-color;
+            color: $primary-color;
+
+            svg * {
+                fill: $primary-color;
+            }
+        }
+    }
+
+    &__row {
+        padding: 0 1.25rem;
+    }
+
+    &__button {
+        cursor: pointer;
+        background-color: white;
+        border-radius: $border-radius-circle;
+        width: 2.5rem;
+        margin-top: 4rem;
+        height: 2.5rem;
+        position: relative;
+        @include display-flex;
+        @include transition($transition-base);
+
+        &--active {
+            .icon {
+                rotate: -180deg;
+            }
+        }
+
+        &:after {
+            content: '';
+            background-color: $secondary-color;
+            border-radius: $border-radius-circle;
+            display: block;
+            height: 0.5rem;
+            width: 0.5rem;
+            position: absolute;
+            top: 0.125rem;
+            right: 0.125rem;
+        }
+
+        &:hover {
+            background-color: darken($nav-bg, 5%);
+            text-decoration: none;
+        }
+    }
+
+    &--small {
+        width: 6rem;
+
+        .#{$nav-prefix}__name {
+            display: none;
+        }
+
+        .profile__info {
+            display: none;
+        }
+    }
+}

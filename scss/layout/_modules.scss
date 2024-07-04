@@ -1,0 +1,27 @@
+.form-group {
+    @include display-flex($align: flex-start);
+    gap: $gap-md;
+
+    .form-box {
+        flex-grow: 1;
+    }
+}
+
+
+.dashboard {
+    @include display-flex($align: stretch);
+    gap: $gap-lg;
+
+    &__item {
+        flex: 1;
+    }
+
+    @include breakpoint(md) {
+        flex-direction: column;
+    }
+}
+
+.box-info {
+    display: flex;
+    gap: $gap-md;
+}

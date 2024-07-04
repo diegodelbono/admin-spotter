@@ -1,0 +1,26 @@
+.#{$alert-prefix} {
+    border-radius: $alert-radius;
+    font-size: $alert-font-size;
+    padding: $alert-padding;
+    margin: $alert-margin 0;
+    position: relative;
+}
+
+@each $name, $color in $status-colors {
+    .#{$alert-prefix}--#{$name} {
+        background-color: lighten-color($color, 30);
+        color: $color;
+
+        .icon {
+            svg * {
+                fill: $color;
+            }
+        }
+    }
+}
+
+@each $name, $color in $status-colors {
+    .#{$alert-prefix}-text--#{$name} {
+        color: $color;
+    }
+}

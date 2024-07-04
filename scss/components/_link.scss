@@ -1,0 +1,10 @@
+.#{$link-prefix} {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    @include transition($transition-base);
+
+    @include hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}

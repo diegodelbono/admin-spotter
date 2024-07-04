@@ -1,0 +1,31 @@
+.#{$radio-prefix} {
+    margin-bottom: 1rem;
+
+    label {
+        margin: 0;
+    }
+
+    display: flex;
+    gap: $gap-sm;
+
+    .input-radio {
+        @extend %input;
+        border-radius: 1rem;
+        height: 1.25rem;
+        width: 1.25rem;
+        padding: 0;
+
+        &:checked {
+            background-color: $checkbox-checked-color;
+            border-color: $checkbox-checked-color;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: white;
+                margin: 0.35rem 0.3rem;
+                border-radius: $border-radius-circle;
+            }
+        }
+    }
+}

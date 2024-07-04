@@ -1,0 +1,36 @@
+.#{$tabs-prefix} {
+    border-bottom: $tabs-border;
+    margin-bottom: $tabs-margin;
+
+    &__container {
+        display: flex;
+        gap: $tabs-gap;
+    }
+}
+
+.#{$tab-prefix} {
+
+
+    &__button {
+        @include transition($transition-base);
+        border-bottom: $tab-border;
+        color: $tab-color;
+        cursor: pointer;
+        font-size: $tab-font-size;
+        padding: $tab-padding;
+        margin-bottom: -1px;
+
+        @include hover-focus {
+            color: $tab-hover-color;
+        }
+
+        @include focus {
+            box-shadow: $tab-focus-shadown;
+        }
+
+        &--active {
+            border-color: $tab-active-color;
+            color: $tab-active-color;
+        }
+    }
+}

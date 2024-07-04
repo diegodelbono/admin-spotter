@@ -1,0 +1,14 @@
+.#{$status-prefix} {
+    border-radius: $status-radius;
+    font-size: $status-font-size;
+    padding: $status-padding;
+    text-align: $status-align;
+    width: $status-width;
+}
+
+@each $name, $color in $status-colors {
+    .status--#{$name} {
+        background-color: lighten-color($color, 40);
+        color: $color;
+    }
+}

@@ -1,0 +1,69 @@
+// --------------------------------------------------------
+//  Breakpoint
+// --------------------------------------------------------
+@mixin breakpoint($breakpoint-size, $type: max) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint-size);
+
+    @if $type ==max {
+        @media only screen and (max-width: $breakpoint-value) {
+            @content;
+        }
+    }
+
+    @else if $type ==min {
+        @media only screen and (min-width: $breakpoint-value) {
+            @content;
+        }
+    }
+}
+
+// --------------------------------------------------------
+//  Display
+// --------------------------------------------------------
+@mixin display-flex ($align: center, $justify: center, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+// --------------------------------------------------------
+//  Hovers
+// --------------------------------------------------------
+@mixin hover {
+    &:hover {
+        @content;
+    }
+}
+
+@mixin focus {
+    &:focus {
+        @content;
+    }
+}
+
+@mixin hover-focus {
+
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+// --------------------------------------------------------
+//  Mask
+// --------------------------------------------------------
+@mixin mask($image-path) {
+    $mask-url: url('../assets/icons/#{$image-path}') no-repeat 50% 50%;
+    mask: $mask-url;
+    -moz-mask: $mask-url;
+    -ms-mask: $mask-url;
+    -webkit-mask: $mask-url;
+}
+
+// --------------------------------------------------------
+//  Transition
+// --------------------------------------------------------
+@mixin transition($transition) {
+    transition: $transition;
+}

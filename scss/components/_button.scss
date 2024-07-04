@@ -1,0 +1,108 @@
+.#{$button-prefix} {
+    background: transparent;
+    border-radius: $btn-radius;
+    color: $btn-color;
+    cursor: pointer;
+    @include display-flex;
+    padding: $btn-padding;
+    @include transition($transition-base);
+
+    &--full {
+        width: 100%;
+    }
+
+    .icon {
+        margin-right: $margin-xs;
+    }
+
+    svg path {
+        fill: $white;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .#{$button-prefix}-#{$color} {
+        background-color: $value;
+        border: $border-base $value;
+
+        @include hover {
+            background: darken($value, 20%);
+            border: $border-base darken($value, 20%);
+
+        }
+
+        @include focus {
+            box-shadow: $btn-shadow;
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .#{$button-prefix}-outline-#{$color} {
+        border: $border-base $value;
+        background-color: transparent;
+        color: $value;
+
+        svg path {
+            fill: $value;
+        }
+
+        @include hover {
+            border: $border-base darken($value, 20%);
+            color: darken($value, 20%);
+            box-shadow: $btn-shadow;
+
+            svg path {
+                fill: darken($value, 20%);
+            }
+        }
+
+        @include focus {
+            box-shadow: $btn-shadow;
+        }
+    }
+}
+
+.#{$button-prefix}-disabled {
+    .icon {
+        background-color: $disabled-color;
+    }
+}
+
+.#{$button-prefix}-group {
+    @include display-flex($justify: flex-start);
+    gap: $gap-sm;
+}
+
+.#{$button-prefix}-icon {
+    @include display-flex;
+    height: 2rem;
+    width: 2rem;
+    border-radius: $border-radius-circle;
+
+    @include focus {
+        box-shadow: $shadow-base;
+    }
+
+    &.btn-disabled {
+
+        .icon {
+            background-color: transparent;
+        }
+
+        svg path {
+            fill: $disabled;
+        }
+    }
+}
+
+
+@each $color, $value in $theme-colors {
+    .#{$button-prefix}-icon-#{$color} {
+        color: $value;
+
+        svg path {
+            fill: $value;
+        }
+    }
+}

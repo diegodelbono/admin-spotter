@@ -1,0 +1,39 @@
+.#{$pagination-prefix} {
+    margin-top: $pagination-margin;
+
+    &__container {
+        @include display-flex;
+        gap: $pagination-gap;
+    }
+
+    &__button {
+        color: $pagination-color;
+        padding: $pagination-padding;
+        border-radius: $pagination-radius;
+        @include display-flex;
+        cursor: pointer;
+        height: 2rem;
+        width: 2rem;
+
+        &:not(&--disabled) {
+
+            @include hover-focus {
+                color: $pagination-hover-color;
+            }
+
+            @include focus {
+                color: $pagination-focus-color;
+                box-shadow: $pagination-focus-shadow;
+            }
+        }
+
+        &--active {
+            background-color: $pagination-active-bg;
+            color: $pagination-active-color;
+        }
+
+        &--disabled {
+            color: $pagination-disabled-color;
+        }
+    }
+}

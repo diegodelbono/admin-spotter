@@ -1,0 +1,46 @@
+.#{$table-prefix} {
+    border: $table-border;
+    border-radius: $table-radius;
+    overflow: hidden;
+
+    @include breakpoint(xl) {
+        overflow-x: scroll;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    thead {
+        background-color: $table-thead-bg;
+
+        th {
+            font-weight: normal;
+
+            .icon--arrow {
+                margin-left: $margin-xs;
+            }
+        }
+    }
+
+    tr {
+
+        th,
+        td {
+            border-bottom: $table-cell-border;
+            padding: $table-cell-padding;
+            text-align: $table-cell-align;
+
+            &.cell-action {
+                width: 3rem;
+            }
+        }
+
+        &:last-child {
+            td {
+                border: none;
+            }
+        }
+    }
+}

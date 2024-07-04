@@ -1,0 +1,30 @@
+.#{$login-prefix} {
+    background-color: $login-bg;
+    height: 100vh;
+    overflow: hidden;
+    @include display-flex;
+    padding: $login-padding;
+
+    &__logo-gsuite {
+        border: $border-base transparent;
+        border-radius: $border-radius-lg;
+        padding: $padding-lg $padding-xl;
+        display: block;
+        background-color: white;
+        max-width: 26rem;
+        margin: 6rem 0;
+
+        @include hover {
+            border-color: $card-hover-border;
+            box-shadow: $card-hover-shadown;
+        }
+
+        img {
+            max-width: 15rem;
+        }
+    }
+
+    &__footer {
+        @include display-flex($justify: space-between);
+    }
+}

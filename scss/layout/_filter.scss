@@ -1,0 +1,20 @@
+.#{$filter-prefix} {
+    display: flex;
+    gap: $gap-lg;
+    margin: $margin-lg 0;
+
+    &__item {
+        flex: 0 1 25%;
+        margin: 0;
+
+        &--button {
+            margin-left: auto;
+            @include display-flex;
+            gap: $gap-md;
+        }
+
+        .form-box {
+            margin: 0;
+        }
+    }
+}

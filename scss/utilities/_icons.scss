@@ -1,0 +1,21 @@
+@each $name,
+$value in $icon-sizes {
+    .#{$icon-prefix}--#{$name} {
+        display: inline-block;
+        height: $value;
+        min-width: $value;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .#{$icon-prefix}--#{$color} {
+        svg * {
+            fill: $value;
+        }
+    }
+}
