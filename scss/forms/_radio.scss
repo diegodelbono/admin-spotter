@@ -1,31 +1,47 @@
 .#{$radio-prefix} {
-    margin-bottom: 1rem;
+    @include display-flex($justify: flex-start);
+    gap: $gap-xs;
+    margin-bottom: $radio-margin;
 
     label {
         margin: 0;
     }
 
-    display: flex;
-    gap: $gap-sm;
+    .form-#{$radio-prefix} {
+        border: $input-border;
+        border-radius: $radio-radius;
+        height: $radio-size;
+        width: $radio-size;
 
-    .input-radio {
-        @extend %input;
-        border-radius: 1rem;
-        height: 1.25rem;
-        width: 1.25rem;
-        padding: 0;
+        @include hover {
+            border-color: $input-hover-border-color;
+        }
+
+        @include focus {
+            border-color: $input-focus-border-color;
+            box-shadow: $input-focus-shadow;
+        }
 
         &:checked {
-            background-color: $checkbox-checked-color;
-            border-color: $checkbox-checked-color;
+            background-color: $radio-checked-bg;
+            border: none;
+            @include display-flex;
 
             &::after {
+                background-color: $radio-checked-color;
                 content: '';
+                border-radius: $radio-radius;
+                mask-size: contain !important;
                 position: absolute;
-                background-color: white;
-                margin: 0.35rem 0.3rem;
-                border-radius: $border-radius-circle;
+                width: calc($radio-size/2);
+                height: calc($radio-size/2);
             }
+        }
+
+        @include disabled {
+            border-color: $input-disabled-color;
+            background-color: $input-disabled-bg;
+            cursor: not-allowed;
         }
     }
 }

@@ -1,4 +1,6 @@
-.form-#{$input-prefix} {
+.form-#{$select-prefix} {
+    background: $input-select-icon-img;
+    background-size: $input-select-icon-size;
     border: $input-border;
     border-radius: $input-radius;
     color: $input-color;
@@ -7,10 +9,6 @@
     padding: $input-padding;
     @include transition($transition-base);
     width: 100%;
-
-    &::placeholder {
-        color: $input-placeholder-color;
-    }
 
     @include hover {
         border-color: $input-hover-border-color;
@@ -40,5 +38,4 @@
             box-shadow: $input-error-shadow;
         }
     }
-
 }

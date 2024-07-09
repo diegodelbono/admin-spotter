@@ -1,0 +1,38 @@
+// .form-error {
+//     border-color: $input-error-color;
+//     color: $input-error-color;
+
+//     @include hover {
+//         border-color: $input-error-color;
+//     }
+
+//     @include focus {
+//         border-color: $input-error-color;
+//         box-shadow: $input-error-shadow;
+//     }
+// }
+
+.form-help {
+    display: block;
+    font-size: $help-font-size;
+    margin: $help-margin;
+
+    &--error {
+        color: $help-color-error;
+    }
+}
+
+
+.form-group {
+    @include display-flex($align: flex-start);
+    gap: $gap-md;
+
+    .form-box {
+        flex-grow: 1;
+        width: 100%;
+    }
+}
+
+.form-box {
+    margin-bottom: $form-box-margin;
+}

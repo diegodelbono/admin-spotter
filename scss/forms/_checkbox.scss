@@ -1,27 +1,46 @@
 .#{$checkbox-prefix} {
-    display: flex;
-    gap: $gap-sm;
+    @include display-flex($justify: flex-start);
+    gap: $gap-xs;
+    margin-bottom: $checkbox-margin;
 
-    .input-checkbox {
-        @extend %input;
+    label {
+        margin: 0;
+    }
+
+    .form-#{$checkbox-prefix} {
+        border: $input-border;
         border-radius: $checkbox-radius;
         height: $checkbox-size;
-        padding: 0;
         width: $checkbox-size;
+
+        @include hover {
+            border-color: $input-hover-border-color;
+        }
+
+        @include focus {
+            border-color: $input-focus-border-color;
+            box-shadow: $input-focus-shadow;
+        }
 
         &:checked {
             background-color: $checkbox-checked-color;
-            border-color: $checkbox-checked-color;
+            border: none;
 
             &::after {
-                background-color: white;
+                background-color: $checkbox-checked-icon-color;
                 content: '';
+                @include mask($checkbox-checked-icon);
+                mask-size: contain !important;
                 position: absolute;
                 width: $checkbox-size;
                 height: $checkbox-size;
-                @include mask($checkbox-checked-icon);
-                mask-size: contain !important;
             }
+        }
+
+        @include disabled {
+            border-color: $input-disabled-color;
+            background-color: $input-disabled-bg;
+            cursor: not-allowed;
         }
     }
 }

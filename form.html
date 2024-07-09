@@ -108,12 +108,12 @@
 
                         <div class="form-box">
                             <label class="label" for="name">Nombre</label>
-                            <input id="name" type="text" class="input-text" />
+                            <input id="name" type="text" class="form-input" />
                         </div>
 
                         <div class="form-box">
                             <label class="label" for="name">Apellido</label>
-                            <input id="name" type="text" class="input-text" />
+                            <input id="name" type="text" class="form-input" disabled />
                             <span class="form-help">Ayuda del campo</span>
                         </div>
 
@@ -123,7 +123,7 @@
 
                         <div class="form-box">
                             <label class="label" for="name">Tipo de país</label>
-                            <select id="name" class="input-select">
+                            <select id="name" class="form-select">
                                 <option>uno</option>
                                 <option>uno</option>
                                 <option>uno</option>
@@ -133,7 +133,7 @@
 
                         <div class="form-box">
                             <label class="label" for="name">Tipo de documento</label>
-                            <select id="name" class="input-select">
+                            <select id="name" class="form-select" disabled>
                                 <option>uno</option>
                                 <option>uno</option>
                                 <option>uno</option>
@@ -144,31 +144,31 @@
                     </div>
 
                     <div class="radio">
-                        <input type="radio" role="radio" name="example" value="example" id="example"
-                            class="input-radio" />
-                        <label for="example">Radiobutton</label>
+                        <input type="radio" role="radio" name="example" id="example-radio" id="example"
+                            class="form-radio" />
+                        <label for="example-radio">Radiobutton</label>
                     </div>
 
                     <div class="checkbox">
-                        <input type="checkbox" class="input-checkbox" role="checkbox" />
-                        <label>Checkbox</label>
+                        <input id="example-checkbox" type="checkbox" class="form-checkbox" role="checkbox" />
+                        <label for="example-checkbox">Checkbox</label>
                     </div>
 
                     <div class="form-box">
                         <label class="label" for="name">Contenido</label>
-                        <textarea rows="5" id="contenido" class="input-text form-textarea"></textarea>
+                        <textarea rows="5" id="contenido" class="form-input"></textarea>
                     </div>
 
                     <div class="form-group">
 
                         <div class="form-box">
                             <label class="label" for="name">Nombre</label>
-                            <input id="name" type="text" class="input-text form-disabled" />
+                            <input disabled id="name" type="text" class="form-input" />
                         </div>
 
                         <div class="form-box">
                             <label class="label" for="name">Apellido</label>
-                            <input id="name" type="text" class="input-text form-error" />
+                            <input id="name" type="text" class="form-input form-error" />
                             <span class="form-help alert-text--error">Ayuda del campo</span>
                         </div>
 

@@ -9,8 +9,6 @@
 }
 
 .#{$tab-prefix} {
-
-
     &__button {
         @include transition($transition-base);
         border-bottom: $tab-border;

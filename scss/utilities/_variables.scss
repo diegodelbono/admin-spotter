@@ -220,15 +220,21 @@ $card-border: $border-base $grey-200;
 $card-margin: $margin-md;
 $card-radius: $border-radius-sm;
 
+$card-active-bg: $third-color ;
+$card-active-border: $primary-color;
+$card-active-color: $primary-color;
+
 $card-hover-border: $primary-color;
 $card-hover-shadown: $shadow-base;
 
-$card-expanded-border: $primary-color;
+$card-read-color: $grey-400;
+$card-read-border: $grey-200;
 
-$card-date-bg: $third-color;
-$card-date-padding: $padding-sm;
-$card-date-width: 6rem;
+$card-disabled-bg: $grey-100;
+$card-disabled-border: $grey-200;
+$card-disabled-color: $grey-400;
 
+$card-wrapper-gap: $gap-lg;
 $card-wrapper-padding: $padding-sm $padding-md;
 
 // --------------------------------------------------------
@@ -243,6 +249,13 @@ $content-sizes: (
     sm: $content-sm-min,
     md: $content-md-min,
 );
+
+// --------------------------------------------------------
+//  Dropdown
+// --------------------------------------------------------
+$dropdown-bg: $white;
+$dropdown-border: $border-base $grey-200;
+$dropdown-radius: $border-radius-base;
 
 // --------------------------------------------------------
 //  Icons
@@ -285,18 +298,40 @@ $input-disabled-bg: $grey-100;
 $input-disabled-color: $disabled-color;
 $input-disabled-shadow: $shadow-disabled-base;
 
+$input-placeholder-color: $grey-300;
+
+$input-select-icon-img: url('../assets/icons/i-arrow.svg') no-repeat center right 1rem;
+$input-select-icon-size: 0.75rem;
+
+
 // --------------------------------------------------------
 //  Checkbox
 // --------------------------------------------------------
 $checkbox-radius: $border-radius-xs;
 $checkbox-size: 1.25rem;
+$checkbox-margin: $margin-sm;
 $checkbox-checked-color: $primary-color;
 $checkbox-checked-icon: 'i-tick.svg';
+$checkbox-checked-icon-color: $white;
 
+// --------------------------------------------------------
+//  Radio
+// --------------------------------------------------------
+$radio-radius: $border-radius-circle;
+$radio-margin: $margin-sm;
+$radio-size: 1.25rem;
+$radio-checked-bg: $primary-color;
+$radio-checked-color: $white;
+
+$form-box-margin: $margin-lg;
+
+// --------------------------------------------------------
+//  Help
+// --------------------------------------------------------
 $help-color: $grey-300;
 $help-color-error: $error-color;
 $help-font-size: $font-size-sm;
-
+$help-margin: $margin-xs 0;
 
 // --------------------------------------------------------
 //  Modal
@@ -323,6 +358,17 @@ $modal-content-margin: $margin-lg 0;
 // --------------------------------------------------------
 $label-color: $grey-300;
 $label-margin: $margin-xs;
+
+// --------------------------------------------------------
+//  Logo
+// --------------------------------------------------------
+$logo-full-bg: url('./../assets/logo-Spotter.svg') no-repeat top left;
+$logo-full-height: 3rem;
+$logo-full-width: 10rem;
+
+$logo-small-bg: url('./../assets/logo-Spotter-imago.svg') no-repeat top left;
+$logo-small-height: 3rem;
+$logo-small-width: 1.85rem;
 
 
 // --------------------------------------------------------

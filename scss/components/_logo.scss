@@ -1,13 +1,12 @@
 .#{$logo-prefix} {
-    height: 3rem;
-    background: url('./../assets/logo-Spotter.svg') no-repeat top left;
+    background: $logo-full-bg;
     display: block;
-    width: 100%;
-    width: 10rem;
+    height: $logo-full-height;
+    width: $logo-full-width;
 
     &--imago {
-        background: url('./../assets/logo-Spotter-imago.svg') no-repeat top left;
-        height: 3rem;
-        width: 1.85rem;
+        background: $logo-small-bg;
+        height: $logo-small-height;
+        width: $logo-small-width;
     }
 }
